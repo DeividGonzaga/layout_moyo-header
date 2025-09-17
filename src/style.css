@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   background-color: grey;
@@ -23,9 +23,7 @@ body {
   background-color: #fff;
 }
 
-.logo img {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.logo_img {
   margin-left: 40px;
   width: 40px;
   height: 40px;
@@ -43,19 +41,24 @@ body {
 }
 
 .nav_link {
-  margin: 0 20px;
   display: flex; /* Flexbox para centralizar o texto */
-  align-items: center; /* Centraliza verticalmente */
   height: 60px;
+  margin: 0 20px;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
   position: relative; /* Para qualquer pseudo-elemento se posicionar */
   transition: color 0.3s; /* Suaviza a troca de cor */
+  color: #000;
 }
 
 .nav_link:hover {
   color: var(--cor-azul); /* Troca a cor do link ao passar o mouse */
+}
+
+.nav_list li + li .nav_link {
+  margin-left: 20px;
 }
 
 /* Link ativo */
