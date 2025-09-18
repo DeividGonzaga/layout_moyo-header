@@ -8,11 +8,10 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
-  background-color: grey;
+  background-color: #fff; /* ou remova */
 }
 
 .header {
@@ -41,16 +40,16 @@ body {
 }
 
 .nav_link {
-  display: flex; /* Flexbox para centralizar o texto */
+  display: flex;
   height: 60px;
-  margin: 0 20px;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  position: relative; /* Para qualquer pseudo-elemento se posicionar */
-  transition: color 0.3s; /* Suaviza a troca de cor */
+  position: relative;
+  transition: color 0.3s;
   color: #000;
+  margin: 0 20px 0 0; /* margem só à direita */
 }
 
 .nav_link:hover {
@@ -59,6 +58,10 @@ body {
 
 .nav_list li + li .nav_link {
   margin-left: 20px;
+}
+
+.nav_list li:last-child .nav_link {
+  margin-right: 0; /* remove depois do último */
 }
 
 /* Link ativo */
