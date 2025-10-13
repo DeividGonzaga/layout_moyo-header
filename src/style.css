@@ -29,6 +29,7 @@ body {
 }
 
 .nav {
+  box-sizing: border-box;
   margin-right: 40px;
 }
 
@@ -49,7 +50,7 @@ body {
   position: relative;
   transition: color 0.3s;
   color: #000;
-  margin: 0 20px 0 0; /* margem só à direita */
+  margin: 0;
 }
 
 .nav_link:hover {
